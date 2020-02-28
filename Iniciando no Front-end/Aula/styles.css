@@ -1,0 +1,133 @@
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700&display=swap";
+
+:root {
+    --color-links: rgb(247, 74, 47);
+    --color-rocket:#7159c1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+
+body {
+    background: #282a36;
+    font-family: 'Source Sans Pro', sans-serif;    
+    color: whitesmoke
+}
+
+header{
+    padding: 16px;
+    border-bottom: 1px solid #333;
+}
+
+.links{
+    text-align: center;
+}
+
+.links a{
+    color: white;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0 16px;
+    text-decoration: none;
+}
+
+.links a:hover{
+    color: var(--color-links);
+    transition: color 200ms;
+}
+
+#Wrapper{
+    text-align: center;
+    padding: 32px;
+}
+
+#Wrapper img{
+    border-radius: 450px 450px 600px 600px;
+    border: 5px solid #1b1d27;
+    max-width:300px;
+    max-height:200px;
+    width: auto;
+    height: auto;
+}
+#Wrapper h1{
+    font-size: 42px;
+    line-height: 52px;
+    font-weight: bold;
+}
+#Wrapper h2{
+    font-size: 26px;
+    line-height: 36px;
+    font-weight: normal;
+    margin-top: 8px;
+    opacity: 0.8;
+}
+#Wrapper p{
+    max-width: 400px;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 30px;
+}
+#Wrapper p a{
+    color: whitesmoke;
+    
+    
+}
+#Wrapper p a:hover{
+    transition: color 200ms;
+    color: var(--color-links)
+    
+}
+#links-footer a{
+    border-bottom: 1px solid var(--color-links);
+}
+
+/*
+*
+*
+** CARDS **
+*
+*
+*/
+
+.cards{
+    max-width: 800px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+.card{
+    background-color: var(--color-rocket);
+}
+.card__image-container img{
+    width: 100%;
+}
+.card__content,
+.card__info{
+    padding: 24px;
+
+}
+.card__info{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.card__price{
+    background-color: var(--color-rocket);
+    filter: brightness(90%);
+    padding: 5px 10px;
+    border-radius: 20px;
+    text-align: center;
+}
+/* MODAL OVERLAY */
+
+.modal-overlay{
+    background-color: rgba(0,0,0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0
+}
