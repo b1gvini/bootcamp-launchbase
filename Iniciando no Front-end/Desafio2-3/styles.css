@@ -2,8 +2,8 @@
 
 :root {
     --color-links: rgb(223, 65, 41);
-    --color-rocket:rgb(11, 11, 39)
-    ;
+    --color-card:#212433;
+    --color-rocket2:#313444;#282a36;
 }
 
 *{
@@ -14,7 +14,7 @@
 }
 
 body {
-    background: rgb(7, 7, 19);
+    background:#2d3041;
     font-family: 'Roboto', sans-serif;    
     color: whitesmoke
 }
@@ -88,20 +88,21 @@ header{
 }
 
 .card{
-    background-color: var(--color-rocket);
+    background-color: var(--color-card);
     filter: brightness(90%);
     cursor: pointer;
 
 }
 .card:hover{
-    border: 5px solid rgb(16, 3, 63);
-    transition: 400ms;
+    border: 2px solid whitesmoke;
+    transition: 100ms;
 }
 
 
 .card__image-container{
     width: auto;
     height: 360px;
+    margin-top:90px
 }
 
 .card__image-container img{
@@ -109,6 +110,7 @@ header{
     height: 200px;
     padding: 20px;
     margin-left: 30px;
+    
     
 }
 .card__content,
@@ -123,29 +125,12 @@ header{
 }
   
 .card__price {
-    background-color: var(--color-rocket);
+    background-color: var(--color-card);
     filter: brightness(80%);
     padding: 5px 15px;
     border-radius: 25px;
     text-align: center;
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 .modal-overlay{
     background-color: rgba(0,0,0, 0.7);
@@ -160,14 +145,14 @@ header{
 }
 
 .modal{
-    background-color: black;
+    background-color: white;
     width: 90%;
     height: 90%;
     margin: 5vh auto;
     position: relative;
 }
 .modal .close-modal{
-    color: white;
+    color: black;
     position: absolute;
     right: 3px;
     top: 3px;
