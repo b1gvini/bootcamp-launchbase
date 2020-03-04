@@ -1,8 +1,9 @@
 @import "https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap";
 
 :root {
-    --color-links: rgb(247, 74, 47);
-    --color-rocket:#311a4d2c;
+    --color-links: rgb(223, 65, 41);
+    --color-rocket:rgb(11, 11, 39)
+    ;
 }
 
 *{
@@ -13,7 +14,7 @@
 }
 
 body {
-    background: #282a36;
+    background: rgb(7, 7, 19);
     font-family: 'Roboto', sans-serif;    
     color: whitesmoke
 }
@@ -77,29 +78,75 @@ header{
 
 /* CARDS */
 .cards{
-    max-width: 80%;
-    margin: auto;
+    max-width: 1200px;
+    margin: 75px auto;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 100px;
+    gap: 30px;
+    height: 100%;
     
 }
-.card__image-container{
-    margin: 10px;
+
+.card{
     background-color: var(--color-rocket);
     filter: brightness(90%);
-    padding:10px;
+    cursor: pointer;
+
+}
+.card:hover{
+    border: 5px solid rgb(16, 3, 63);
+    transition: 400ms;
+}
+
+
+.card__image-container{
+    width: auto;
+    height: 360px;
 }
 
 .card__image-container img{
-    width: 100%;
-    height: 400px;
+    width: 300px;
+    height: 200px;
+    padding: 20px;
+    margin-left: 30px;
+    
 }
 .card__content,
 .card__info{
     padding: 12px;
     text-align: center;
 }
+
+.card__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+  
+.card__price {
+    background-color: var(--color-rocket);
+    filter: brightness(80%);
+    padding: 5px 15px;
+    border-radius: 25px;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .modal-overlay{
     background-color: rgba(0,0,0, 0.7);
     width: 100%;
@@ -108,6 +155,7 @@ header{
     top: 0;
     opacity: 0;
     visibility: hidden;
+    
     
 }
 
