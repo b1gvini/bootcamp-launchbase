@@ -3,7 +3,9 @@
 :root {
     --color-links: rgb(223, 65, 41);
     --color-card:#212433;
-    --color-rocket2:#313444;#282a36;
+    --color-stack:#04d361;
+    --color-launch:#fd951f;
+    --color-starter:#7159c1;
 }
 
 *{
@@ -22,6 +24,7 @@ body {
 header{
     padding: 16px;
     border-bottom: 1px solid #333;
+    background-color: var(--color-card);
 }
 
 .links{
@@ -68,8 +71,10 @@ header{
     list-style: none;
     line-height: 24px;
 }
+
 #links-footer{
     margin-bottom: 10px;
+
 }
 #links-footer a{
     border-bottom: 1px solid var(--color-links);
@@ -93,12 +98,19 @@ header{
     cursor: pointer;
 
 }
-.card:hover{
-    border: 2px solid whitesmoke;
-    transition: 100ms;
+#starter:hover{
+    border: 3px solid var(--color-starter);
+    transition: 200ms;
 }
+#launchbase:hover{
+    border: 3px solid var(--color-launch);
+    transition: 200ms;
+}
+#gostack:hover{
+    border: 3px solid var(--color-stack);
+    transition: 200ms;
 
-
+}
 .card__image-container{
     width: auto;
     height: 360px;
@@ -122,6 +134,14 @@ header{
 .card__info {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    
+}
+.card__info p{
+    background-color: var(--color-card);
+    filter: brightness(80%);
+    padding: 5px 15px;
+    border-radius: 25px;
+    text-align: center;
 }
   
 .card__price {
