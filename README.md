@@ -16,3 +16,5 @@
 - [x] 3. Desafio 2.3 - Página de Cursos e Iframe
 - [ ] 4. Desafio 2.4 - Foodfy (Site de Receitas no qual utilizamos Modal-Overlay e Iframe)
 
+## Curso Interrompido - Volto no proximo semestre por motivos de ufrpe :D
+
